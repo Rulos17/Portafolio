@@ -1,4 +1,7 @@
 import { Component } from "react";
+import Logo from "./Logo";
+import NavItem from "./NavItem";
+import RedesSociales from "./RedesSociales";
 
 const styles = {
     navbar:{
@@ -10,54 +13,42 @@ const styles = {
         height: '100%',
         width: '250px',
         backgroundColor: '#B64F56',
-        padding: '0px 0px',
-        
-
-        
-        
+        padding: '0px 0px', 
     },
-    ul:{
+    div:{
         padding: 0,
-        marginTop:'50px',
-        borderTop:'solid 1px #61292A',
-        boxShadow: '0px -4px 4px rgb(97,41,42,0.6)',
+        marginTop:'80px',
+        height:'470px',
         
-    },
-    logo:{
-        height:"auto",
-        borderRadius:'30px',
-        boxShadow: '8px 8px 8px rgb(97,41,42,0.6)',
-        border:'solid 1px #61292A',
-    },
-    li:{
-        width:'250px',
-        margin: 0,
         display:'flex',
         flexDirection:'column',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding:'30px 0px',
-        boxShadow: '0px 4px 4px rgb(97,41,42,0.6)',
-        borderBottom:'solid 1px #61292A',
-        color:'#61292A',
         
-    }
+        
+        
+        
+    },
+    
 }
 
 class Navbar extends Component{
     render(){
+        const {logo} = this.props
         return(
             <nav style={styles.navbar}>
 
-                <img style={styles.logo} src="/imagenes/Logo.jpeg" width="200px"></img>
+                <Logo logo={logo} />
 
-                <div >
-                    <ul style={styles.ul}>
-                        <li style={styles.li}>item1</li>
-                        <li style={styles.li}>item2</li>
-                        <li style={styles.li}>item3</li>
-                    </ul>
+                <div style={styles.div}>
+                    <NavItem>item 1</NavItem>
+                    <NavItem>item 2</NavItem>
+                    <NavItem>item 3</NavItem>
+                    <NavItem>item 4</NavItem>
+                    <NavItem>item 5</NavItem>
+                    
                 </div>
+                <RedesSociales/>
             </nav>
         )
     }
