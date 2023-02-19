@@ -14,7 +14,7 @@ const styles={
         borderRadius : '20px',
         color:'#61292A',
         backgroundColor: '#B64F56',
-        
+        cursor:'pointer',
         fontSize:'1.2rem',
         
         

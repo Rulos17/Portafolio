@@ -6,14 +6,12 @@ const styles = {
         display: 'flex',
         flexDirection:'row',
         alignItems: 'center',
+        marginBottom:'10px',
+        padding:0,
         
-        marginTop:'20px',
-        height: '100px',
+        height: 'auto',
         justifyContent:'space-between'
     },
-    button:{
-        width:'50px',
-    }
 }
 
 
