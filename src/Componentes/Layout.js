@@ -5,8 +5,6 @@ const styles = {
         width:'100%',
         
         marginLeft:'250px', 
-        border:'solid 5px red',
-        width: '100%',
         color:'#add763',
         display: 'flex',
         flexDirection: 'column',
@@ -24,6 +22,8 @@ class Layout extends Component{
                     {this.props.children}
                 </div>
                 
+                
+
             </div>
         )
     }

@@ -22,10 +22,11 @@ const styles={
 }
 
 class NavItem extends Component{
+
     render(){
-        
+        const {mostrarContent, content } = this.props
         return(
-            <button style={styles.button} {... this.props}/>
+            <button onClick={()=>mostrarContent(content)}  style={styles.button}>{this.props.children}</button>
         )
     }
 }

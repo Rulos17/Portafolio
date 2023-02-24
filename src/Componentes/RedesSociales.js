@@ -7,6 +7,7 @@ const styles = {
         flexDirection:'row',
         alignItems: 'center',
         marginBottom:'10px',
+        marginTop:'10px',
         padding:0,
         
         height: 'auto',

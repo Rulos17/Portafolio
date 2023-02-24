@@ -46,22 +46,25 @@ const styles = {
     }
 }
 
+
+
 class Navbar extends Component{
+
     render(){
-        const {logo} = this.props
+        const {logo, mostrarContent} = this.props
         return(
             <nav style={styles.navbar}>
 
                 <Logo logo={logo} />
                 <div style={styles.div}>
                     <div style={styles.navitems}>
-                        <NavItem>Home</NavItem>
-                        <NavItem>Sobre mi</NavItem>
-                        <NavItem>Conocimientos</NavItem>
-                        <NavItem>Proyectos</NavItem>
+
+                        <NavItem content="home" mostrarContent={mostrarContent}>Home</NavItem>
+                        <NavItem content="sobremi" mostrarContent={mostrarContent}>Sobre mi</NavItem>
+                        <NavItem content="conocimientos" mostrarContent={mostrarContent}>Conocimientos</NavItem>
+                        <NavItem content="proyectos" mostrarContent={mostrarContent}>Proyectos</NavItem>
                             
                     </div>
-                       
                 </div>
                 <div style={styles.end}>                    
                     <RedesSociales/>

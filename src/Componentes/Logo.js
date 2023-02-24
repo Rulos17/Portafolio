@@ -15,7 +15,7 @@ class Logo extends Component{
     render(){
         const {logo} = this.props
         return(
-            <img style={styles.logo} src={logo.img} width={logo.ancho}></img>
+            <img alt ="logo"style={styles.logo} src={logo.img} width={logo.width} ></img>
         )
     }
 }
