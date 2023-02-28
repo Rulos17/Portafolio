@@ -1,25 +1,42 @@
 import { Component } from "react";
+import Home from "./Home";
+import SobreMi from "./SobreMi";
+import Conocimientos from "./Conocimientos";
+import Proyectos from "./Proyectos";
 
+
+const styles={
+    div:{
+        height:'500px',
+        width:'1000px',
+        alignItems:'center',
+        boxShadow: '-10px -10px 20px rgb(97,41,42,0.8)',
+        border:'solid 5px blue',
+        display:'flex',
+        justifyContent:'space-between',
+        
+    }
+}
 
 class Contenido extends Component{
     render(){
         const {homeVisible, sobremiVisible, conocimientosVisible, proyectosVisible} = this.props
         return(
-            <div>
+            <div style={styles.div}>
                 {homeVisible
-                ?   <h1>home</h1>
+                ?   <Home/>
                 :   null 
                 }
                 {sobremiVisible
-                ?   <h1>Sobre mi</h1>
+                ?   <SobreMi/>
                 :   null 
                 }
                 {conocimientosVisible
-                ?   <h1>Conocimientos</h1>
+                ?   <Conocimientos/>
                 :   null 
                 }
                 {proyectosVisible
-                ?   <h1>Proyectos</h1>
+                ?   <Proyectos/>
                 :   null 
                 }
             </div>

@@ -21,20 +21,12 @@ const styles = {
         padding: 0,
         marginTop:'80px',
         maxHeight:'400px',
-        
-        
         display:'flex',
         flexDirection:'column',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        
-        
-        
-        
-        
+        justifyContent: 'space-between', 
     },
-    end:{
-       
+    end:{   
         justify:'end',
         
         margin:0,

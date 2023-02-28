@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import '../App.css';
 const styles = {
     main:{
         display: 'flex',
@@ -17,7 +17,7 @@ const styles = {
 class MainDiv extends Component{
     render(){
         return(
-            <div  style={styles.main}>{this.props.children}</div>
+            <div className ='app' style={styles.main}>{this.props.children}</div>
         )
     }
 }

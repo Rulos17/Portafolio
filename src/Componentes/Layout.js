@@ -1,17 +1,38 @@
 import { Component } from "react";
 
 const styles = {
+    
     layout:{
-        width:'100%',
+            
+        height: '700px',
+        width: '100%',
         
-        marginLeft:'250px', 
-        color:'#add763',
-        display: 'flex',
-        flexDirection: 'column',
+        // border:'5px solid red',
+        
+        position:'relative',
+        display:'flex',
+        justifyContent:'center',
+        marginLeft:'250px'
+        
+        
         
         
     },
-    
+    container:{
+        
+        width:'100%',
+        height:'100%',
+        display: 'flex',
+        // border:'5px solid yellow',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'center',
+        
+        
+        
+        
+        
+    }
 }
 
 class Layout extends Component{
@@ -21,9 +42,6 @@ class Layout extends Component{
                 <div style={styles.container}> 
                     {this.props.children}
                 </div>
-                
-                
-
             </div>
         )
     }

@@ -3,6 +3,7 @@ import { Component } from "react";
 
 const styles ={
     logo:{
+        width:"200px",
         marginTop:'30px',
         height:"auto",
         borderRadius:'30px',
@@ -15,7 +16,7 @@ class Logo extends Component{
     render(){
         const {logo} = this.props
         return(
-            <img alt ="logo"style={styles.logo} src={logo.img} width={logo.width} ></img>
+            <img alt ="logo"style={styles.logo} src={logo.img}  ></img>
         )
     }
 }
